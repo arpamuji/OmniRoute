@@ -45,7 +45,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: .
-          target: runner-base
+          target: runner-cli
           push: true
           tags: ${{ secrets.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:${{ inputs.image_tag }}
           provenance: false
